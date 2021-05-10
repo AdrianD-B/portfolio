@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Krona One", sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+}
+
+b {
+  color: dodgerblue;
+}
+
+.divider {
+  width: 20%;
+  padding: 1px;
+  background-color: dodgerblue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.HomePage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HomePage__Title {
+  position: relative;
+  font-size: 2em;
+  text-align: center;
+  width: 90%;
+}
+
+.HomePage__Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.HomePage__Links__icon {
+  color: white;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.HomePage__Links__icon:hover {
+  color: dodgerblue;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.HomePage__text {
+  width: 90%;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.HomePage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HomePage__container__Img {
+  margin-top: 50px;
+  margin-right: 40px;
+  width: 90px;
+  height: 100px;
+}
+
+.About {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.About__image {
+  width: 30%;
+}
+
+.About__container {
+  width: 70%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.About__container__lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.About__container__lang__button {
+  padding: 10px;
+  background-color: dodgerblue;
+  color: #111;
+  cursor: pointer;
+}
+
+.About__container__lang__buttonActive {
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.About__container__title {
+  margin-bottom: 20px;
+  font-size: 4em;
+  color: dodgerblue;
+}
+
+.About__container__text {
+  font-family: "Exo", sans-serif;
+  font-size: 1.2em;
+  line-height: 35px;
+  width: 80%;
+}
+
+.About__container__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+}
+
+.About__container__skills__item {
+  margin-top: 5px;
+}
+
+.About__container__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.About__container__list__icon {
+  margin-right: 20px;
+  color: white;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.About__container__list__icon:hover {
+  color: dodgerblue;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.Work {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.Work__container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Work__container__title {
+  font-size: 4em;
+  color: dodgerblue;
+}
+
+.Work__container__projects {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.Work__container__projects__container {
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+}
+
+.Work__container__projects__container__icon {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.Work__container__projects__container__icon:hover {
+  color: dodgerblue;
+}
+
+.Work__container__projects__container__image {
+  width: 100%;
+  height: 100%;
+}
+
+.Contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.Contact__container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Contact__container__title {
+  font-size: 4em;
+  color: dodgerblue;
+}
+
+.Contact__container__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Navbar {
+  position: relative;
+  background: #111;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 50;
+}
+
+.Navbar__menu {
+  display: none;
+  color: dodgerblue;
+}
+
+.Navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.Navbar__list__item {
+  margin-right: 75px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.Navbar__list__item:hover {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.Navbar__list__item:hover:after {
+  width: 5.5em;
+  border-bottom: 3px solid dodgerblue;
+}
+
+.Navbar__list__item:after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 1em;
+  padding-top: 3px;
+  border-bottom: 3px solid white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 720px) {
+  .HomePage__Title {
+    font-size: 1.5em;
+  }
+  .HomePage__Links {
+    width: 50%;
+  }
+  .HomePage__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .HomePage__container__Img {
+    width: 80px;
+    height: 90px;
+  }
+  .Navbar {
+    position: relative;
+  }
+  .Navbar__list {
+    display: none;
+  }
+  .Navbar__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .Navbar__listMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    left: 0;
+    list-style: none;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .Navbar__listMobile__item {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .Navbar__listMobile__item:active {
+    color: dodgerblue;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
