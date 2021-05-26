@@ -1,4 +1,7 @@
 import React,{ useState, useEffect } from 'react';
+import {CSSTransition} from 'react-transition-group'
+
+//icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -23,13 +26,19 @@ const Navbar = () => {
                 <div className="Navbar__menu" onClick={() => setClicked(!clicked)}>
                     <FontAwesomeIcon icon={clicked ? faBars : faTimes} size="3x"/>
                 </div>
-                <ul className={clicked ? 'Navbar__list' : 'Navbar__listMobile'}>
+                <CSSTransition
+                    in={clicked}
+                    timeout={600}
+                    classNames="Nav"
+                >
+                    <ul className={clicked ? 'Navbar__list' : 'Navbar__listMobile'}>
                     {MenuItems.map((item)=>{
                         return(
                             <li key={item.id}><a className={clicked ? item.cName : 'Navbar__listMobile__item'} href={item.url}>{item.label}</a></li>
                         )
                     })}
                 </ul>
+                </CSSTransition>
             </nav>
         </>
     )

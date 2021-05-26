@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 // links
 import { ReactComponent as LinkedInIcon } from '../images/linkedin-in-brands.svg';
-import { ReactComponent as DownloadIcon } from '../images/download-solid.svg';
 
 const About = () => {
     const [french, setFrench] = useState(false);
@@ -44,11 +43,6 @@ const About = () => {
                             href="https://www.linkedin.com/in/adrian-de-braga-3345411a0/"
                             target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon />
-                        </a>
-                        <a className="About__container__list__icon"
-                            href="/"
-                            target="_blank" rel="noopener noreferrer">
-                            <DownloadIcon />
                         </a>
                     </div>
                 </div>
